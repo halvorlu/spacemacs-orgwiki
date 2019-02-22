@@ -30,10 +30,10 @@
               "aowd" 'org-wiki-asset-open
               ;; (h)ome
               "aowh" 'org-wiki-index
-              ;; (i)nsert link
-              "aowi" 'org-wiki-insert
+              ;; (i)nsert link to existing page
+              "aowi" 'org-wiki-insert-link
               ;; (n)ew page
-              "aown" 'org-wiki-make-page)
+              "aown" 'org-wiki-new)
             (when (configuration-layer/layer-usedp 'helm)
               (spacemacs/set-leader-keys
                 ;; (j)ump to page

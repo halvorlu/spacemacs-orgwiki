@@ -20,7 +20,6 @@ Example: [[Linux/LinuxManual.pdf]]"
 
   (let ((pagename (file-name-base (buffer-file-name))))
     (org-wiki--asset-helm-selection
-     pagename
      (lambda (file)
        (insert (format "[[file:%s/%s]]"
                        pagename
